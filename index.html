@@ -12,9 +12,68 @@
   <title>CloneSite Checkpoint</title>
 </head>
 
-<body>
-  <header></header>
-  <main></main>
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class="debug">
+  <header>
+    <div class="container-fluid bg-primary h-100">
+      <div class="row h-100">
+        <div class="col text-light d-flex flex-direction-row align-items-center">
+          <i class="mdi mdi-flask-round-bottom"></i>
+          <h1>Genius in a Bottle</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="row hero-img text-light shadow">
+      <div class="col-md-3 offset-1">
+        <h4>SUBTLE HEADING</h4>
+        <div class="row">
+          <div class="bg-light rounded p-3 w-100 h-100 text-primary">
+            <div class="col">
+              <h3>LESS SUBTLE HEADING</h3>
+            </div>
+            <div class="col d-flex flex-column">
+              <input type="text" id="name" placeholder="NAME">
+              <input type="text" id="email" placeholder="EMAIL">
+              <div class="d-flex">
+                <input type="text" id="phone" placeholder="PHONE">
+                <input type="text" id="ext" placeholder="EXT.">
+              </div>
+              <input type="text" id="message" placeholder="MESSAGE">
+              <div>
+                <input type="checkbox" id="checkbox">
+                <p>by checking this box I agree to share my information with the potion-making gnomes</p>
+              </div>
+              <button type="button" class="btn btn-primary">SUBMIT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <h1>FOR ALL YOUR ALCHEMY NEEDS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dignissimos cumque eos autem nulla error!</p>
+      </div>
+    </div>
+    <div class="row"></div>
+  </main>
   <footer></footer>
 </body>
 

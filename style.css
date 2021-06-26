@@ -8,8 +8,22 @@ main {
   flex-grow: 1;
 }
 
+*{
+font-family: 'Montserrat', sans-serif;
+}
+
 .header{
 height: 6rem;
+}
+
+.fixed-header{
+  width: 100%;
+  position: fixed;
+  background-color: primary;
+}
+
+.fixed-header{
+  top: 0;
 }
 
 .hero-img{
@@ -18,11 +32,17 @@ height: 6rem;
   height: 80vh;
 }
 
+@media only screen and (max-width: 768px) {
+  .hidden-mobile{
+    display: none;
+  }
+}
+
 .social{
   height: 35vh;
 }
 
 .bl{
-border-left: thick solid green;
+border-left: thick solid #e83283;
 height: fit-content;
 }

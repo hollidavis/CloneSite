@@ -5,11 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="quartz.css">
+  <link rel="stylesheet" href="style.css">
   <title>Genius in a Bottle</title>
 </head>
 
@@ -36,45 +39,61 @@
   }
 </style>
 
-<body class="">
-  <header>
-    <div class="container-fluid bg-primary header">
-      <div class="row py-2">
-        <div class="col d-flex flex-direction-row align-items-center">
+<body>
+  <header class="container-fluid sticky-top header bg-info">
+    <div class="row">
+      <div class="col d-flex flex-direction-row align-items-center">
+        <nav class="navbar">
           <i class="mdi mdi-flask-round-bottom mdi-48px"></i>
-          <h1 class="m-0">Genius in a Bottle</h1>
-        </div>
+          <a class="navbar-brand" href="#">
+            <h1>Genius in a Bottle</h1>
+          </a>
+        </nav>
       </div>
     </div>
   </header>
   <main>
-    <div id="main-img" class="row hero-img text-secondary">
-      <div class="col-md-3 mt-5">
-        <p class="">SUBTLE HEADING</p>
-        <div class="row">
-          <div class=" card bg-primary round p-3 text-primary">
-            <div class="col card-title">
-              <h3>LESS SUBTLE HEADING</h3>
+    <div id="main-img" class="row hero-img">
+      <div class="col-md-3 offset-md-1>
+        <h5 class=" text-muted">Subtle Heading</h5>
+        <div class="card text-white bg-dark">
+          <h5 class="row card-header w-100">Less Subtle Heading</h5>
+          <div class="row card-body w-100 p-1 d-flex flex-column">
+            <div class="col m-1">
+              <input type="text" class="form-control" placeholder="NAME">
             </div>
-            <div class="col card-body d-flex flex-column">
-              <input type="text" id="name" class="m-2 p-1" placeholder="NAME">
-              <input type="text" id="email" class="m-2 p-1" placeholder="EMAIL">
-              <div class="d-flex justify-content-between">
-                <input type="text" id="phone" class="m-2 p-1" placeholder="PHONE">
-                <input type="text" id="ext" class="m-2 p-1" placeholder="EXT.">
+            <div class="col m-1">
+              <input type="email" class="form-control" placeholder="EMAIL">
+            </div>
+            <div class="col m-1">
+              <div class="row">
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" placeholder="PHONE">
+                </div>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="EXT.">
+                </div>
               </div>
-              <input type="text" id="message" class="m-2 p-1" placeholder="MESSAGE">
-              <div class="d-flex flex-direction-row align-items-start m-2 p-1">
-                <input type="checkbox" id="checkbox" class="checkbox">
-                <p class="pl-2">by checking this box I agree to share my info with the potion-making gnomes</p>
+            </div>
+            <div class="col m-1">
+              <input type="text" class="form-control pb-5" placeholder="MESSAGE">
+            </div>
+            <div class="col m-1">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <small class="form-check-label" for="flexCheckDefault">
+                  I agree to share my info with the potion-making gnomes
+                </small>
               </div>
-              <button type="button" class="btn btn-success text-primary w-25 m-0">SUBMIT</button>
+            </div>
+            <div class="col m-1">
+              <button type="button" class="btn btn-secondary">SUBMIT</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 bl offset-1 mt-5 ">
-        <h1>FOR ALL YOUR ALCHEMY NEEDS</h1>
+      <div class="col-md-4 bl hidden-mobile">
+        <h1>POTIONS R US</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dignissimos cumque eos autem nulla error!</p>
       </div>
     </div>
@@ -128,47 +147,47 @@
       <div class="col-md-4 bg-primary d-flex flex-column align-items-center">
         <div class="d-flex flex-row">
           <i class="mdi mdi-format-quote-open  mdi-36px"></i>
-          <h4 class="text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium iure voluptas
+          <h4 class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium iure voluptas
             culpa
             sunt dolor doloremque quia repellendus, voluptatum fugiat reprehenderit vel, dolorem labore voluptate
             corrupti
             pariatur cumque? Neque, voluptas odit.</h4>
         </div>
-        <h4 class="text-primary">Lorem ipsum dolor sit amet.</h4>
+        <h4 class="">Lorem ipsum dolor sit amet.</h4>
       </div>
       <div class="col-md-4 bg-primary d-flex flex-column align-items-center">
         <div class="d-flex flex-row">
           <i class="mdi mdi-format-quote-open  mdi-36px"></i>
-          <h4 class="text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium iure voluptas
+          <h4 class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium iure voluptas
             culpa
             sunt dolor doloremque quia repellendus, voluptatum fugiat reprehenderit vel, dolorem labore voluptate
             corrupti
             pariatur cumque? Neque, voluptas odit.</h4>
         </div>
-        <h4 class="text-primary">Lorem ipsum dolor sit amet.</h4>
+        <h4 class="">Lorem ipsum dolor sit amet.</h4>
       </div>
       <div class="col-md-4 bg-primary d-flex flex-column align-items-center">
         <div class="d-flex flex-row">
           <i class="mdi mdi-format-quote-open  mdi-36px"></i>
-          <h4 class="text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium iure voluptas
+          <h4 class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium iure voluptas
             culpa
             sunt dolor doloremque quia repellendus, voluptatum fugiat reprehenderit vel, dolorem labore voluptate
             corrupti
             pariatur cumque? Neque, voluptas odit.</h4>
         </div>
-        <h4 class="text-primary">Lorem ipsum dolor sit amet.</h4>
+        <h4 class="">Lorem ipsum dolor sit amet.</h4>
       </div>
     </div>
   </main>
   <footer>
     <div class="container-fluid">
       <div class="row d-flex flex-column">
-        <div class="col bg-primary d-flex flex-column">
+        <div class="col d-flex flex-column">
           <h1>Lorem, ipsum.</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima beatae, deleniti officia ut minus pariatur?
           </p>
         </div>
-        <div class="col bg-secondary text-primary text-center">
+        <div class="col bg-secondary text-center">
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi accusamus et ipsam possimus doloribus
             animi. Quam reprehenderit esse libero possimus illum, laudantium doloribus beatae temporibus!</p>
         </div>

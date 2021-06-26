@@ -9,7 +9,7 @@ main {
 }
 
 .header{
-height: 10vh;
+height: 15vh;
 }
 
 .hero-img{
@@ -30,8 +30,4 @@ height: fit-content;
 .checkbox{
   height: 24px;
   width: 24px;
-}
-
-.form{
-  margin-left: 100px;
 }

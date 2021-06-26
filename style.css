@@ -9,7 +9,7 @@ main {
 }
 
 .header{
-height: 15vh;
+height: 6rem;
 }
 
 .hero-img{
@@ -25,9 +25,4 @@ height: 15vh;
 .bl{
 border-left: thick solid green;
 height: fit-content;
-}
-
-.checkbox{
-  height: 24px;
-  width: 24px;
 }

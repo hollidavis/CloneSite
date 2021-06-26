@@ -35,8 +35,8 @@ height: fit-content;
   text-shadow: 2px 2px 2px black
 }
 
-.vertical-align{
-  vertical-align: middle;
+.spill {
+  bottom: -75px
 }
 
 .header{
